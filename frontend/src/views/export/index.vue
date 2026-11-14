@@ -33,6 +33,8 @@
       <button class="btn ghost" type="button" @click="resetFilters">重置条件</button>
     </form>
 
+    <ManifestPanel />
+
     <table class="data-table">
       <thead>
         <tr>
@@ -79,6 +81,7 @@ import {
   moduleMeta,
   runAction as applyAction,
 } from '@/api/local-service'
+import ManifestPanel from './ManifestPanel.vue'
 import type { EntryRow } from '@/data/types'
 
 const meta = moduleMeta('export')
